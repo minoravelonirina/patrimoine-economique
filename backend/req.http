@@ -1,0 +1,6 @@
+GET http://localhost:3005/possession
+###
+POST http://localhost:3005/possession
+###
+GET http://localhost:3005/patrimoine
+

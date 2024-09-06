@@ -9,22 +9,22 @@ export default class Possession {
   }
 
   getValeur(date) {
-    return this.getValeurApresAmortissement(date);
+    return this.getValeurApresAmortissement(this.valeur, this.dateDebut.tauxAmortissement, this.dateDebut, date);
   }
 
-  getValeurApresAmortissement(dateActuelle) {
-    if (dateActuelle < this.dateDebut) {
+  getValeurApresAmortissement(valeur, tauxAmortissement, dateDebut, dateActuelle) {
+    if (dateActuelle < dateDebut) {
       return 0;
     }
     const differenceDate = {
-      year: dateActuelle.getFullYear() - this.dateDebut.getFullYear(),
-      month: dateActuelle.getMonth() - this.dateDebut.getMonth(),
-      day: dateActuelle.getDate() - this.dateDebut.getDate(),
+      year: dateActuelle.getFullYear() - dateDebut.getFullYear(),
+      month: dateActuelle.getMonth() - dateDebut.getMonth(),
+      day: dateActuelle.getDate() - dateDebut.getDate(),
     };
   
     var raison = differenceDate.year + differenceDate.month / 12 + differenceDate.day / 365;
 
-    const result = this.valeur - this.valeur *(raison * this.tauxAmortissement / 100);
+    const result = valeur - valeur *(raison * tauxAmortissement / 100);
     return result;
   }
 }
