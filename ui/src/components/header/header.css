@@ -1,0 +1,23 @@
+.boutton-patrimoine, 
+.boutton-possession,
+.boutton-add {
+    width: auto;
+    background-color: rgb(72, 72, 108);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  display: flex;
+}
+
+.header {
+    margin: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+    height: auto;
+    align-items: center;
+    /* margin-bottom: -8rem; */
+}

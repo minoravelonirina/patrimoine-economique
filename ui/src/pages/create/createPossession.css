@@ -1,0 +1,79 @@
+.container2 {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 5%;
+    width: 24rem;
+    height: auto;
+    text-align: center;
+    margin-inline: auto;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+}
+
+.h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-inline: auto;
+}
+
+
+.input1 {
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border-color: black;
+
+
+}
+
+.libelle,
+.valeur,
+.dateDebut,
+.taux,
+.dateFin {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* margin-bottom: 1rem; */
+}
+
+.submit-button,
+.boutton {
+    width: 10rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 0.5rem;
+    margin-inline: auto;
+}
+
+.div-input {
+    gap: 1rem;
+    margin-inline: auto;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#text,
+#date {
+    padding: 0.5rem;
+    border-radius: 0.50rem;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

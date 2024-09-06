@@ -1,0 +1,15 @@
+.list-title {
+  margin-inline: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.boutton-valider {
+  background-color: rgb(12, 12, 93);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1% 2%;
+  border-style: none;
+}

@@ -1,0 +1,59 @@
+.bordered-table {
+    width: auto;
+    border-collapse: collapse; 
+    margin-inline: auto;
+    margin-top: 3rem;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+}
+
+.bordered-table th, .bordered-table td {
+    border: 1px solid black; 
+    padding: 1rem; 
+    text-align: left; 
+}
+
+.bordered-table td {
+    background-color: transparent;
+
+}
+
+.bordered-table th { 
+    background-color: transparent;
+
+}
+
+.modifier {
+    background-color: rgb(88, 158, 88);
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.fermer {
+    background-color: rgb(77, 60, 228);
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.button {
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.actions {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.somme-valeurs {
+    margin-block: 2rem;
+}
+
