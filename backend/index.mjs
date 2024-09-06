@@ -3,6 +3,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
+import cors from 'cors'
 
 dotenv.config();
 const app = express();
@@ -158,6 +159,10 @@ app.get('/patrimoine', async (req, res) => {
     res.status(500).send('Erreur serveur');
   }
 });//----------------------------------
+
+app.use(cors({
+  origin: 'https://patrimoine-ui-zn16.onrender.com',
+}));
 
 
 app.listen(PORT, () => {
