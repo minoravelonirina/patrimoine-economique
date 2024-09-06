@@ -1,10 +1,16 @@
-const express = require('express');
-const path = require('path');
-const fs = require('fs/promises');
-const app = express();
-require('dotenv').config();
+import express from 'express';
+import path from 'path';
+import fs from 'fs/promises';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
 
-const PORT = process.env.PORT || 5000;
+dotenv.config();
+const app = express();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const PORT = process.env.PORT || 3005;
 
 app.use(express.json());
 app.use(express.static('../../ui/build'));
