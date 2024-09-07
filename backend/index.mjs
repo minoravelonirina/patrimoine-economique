@@ -12,6 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 3002;
+const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 
 app.use(express.json());
 app.use(express.static('../../ui/build'));
@@ -161,7 +162,7 @@ app.get('/patrimoine', async (req, res) => {
 });//----------------------------------
 
 app.use(cors({
-  origin: 'https://patrimoine-ui-zn16.onrender.com',
+  origin: CORS_ORIGIN
 }));
 
 
